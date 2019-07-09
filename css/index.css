@@ -1,0 +1,44 @@
+	* {
+		padding: 0;
+		margin: 0;
+	}
+	
+	html {
+		height: 100%;
+	}
+	
+	body {
+		background: #023b3b url(../img/timg.jpg) no-repeat center;
+		height: 100%;
+		background-size: cover;
+		overflow: hidden;
+		perspective: 1000px;
+	}
+	
+	#box {
+		width: 0;
+		height: 0;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform-style: preserve-3d;
+		transform: translateZ(-2000px) rotateX(0deg) rotateY(0deg);
+	}
+	
+	#box li {
+		list-style: none;
+		width: 120px;
+		height: 160px;
+		cursor: pointer;
+		background: rgba(0, 127, 127, .5);
+		border: 1px solid rgba(127, 255, 255, .25);
+		box-shadow: 0 0 12px rgba(0, 255, 255, .5);
+		position: absolute;
+		left: -60px;
+		top: -80px;
+	}
+	
+	#box li:hover {
+		box-shadow: 0 0 12px rgba(0, 255, 255, .75);
+		border: 1px solid rgba(127, 255, 255, .75);
+	}
